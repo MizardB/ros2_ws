@@ -2,6 +2,7 @@
 
 [![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy_Jalisco-3498db?style=for-the-badge&logo=ros&logoColor=white)](https://docs.ros.org/en/jazzy/)
 [![Nix Flakes](https://img.shields.io/badge/Nix-Flakes_Enabled-5277C3?style=for-the-badge&logo=nixos&logoColor=white)](https://nixos.org/)
+[![Binary Cache](https://img.shields.io/badge/Cachix-ros.cachix.org-blueviolet?style=for-the-badge&logo=nixos&logoColor=white)](https://ros.cachix.org)
 [![Reproducible](https://img.shields.io/badge/Build-100%25_Reproducible-2ecc71?style=for-the-badge)]()
 [![Platform](https://img.shields.io/badge/Platform-Linux_x86__64-orange?style=for-the-badge&logo=linux&logoColor=white)]()
 
@@ -11,6 +12,7 @@ A modern, declarative, and 100% reproducible **ROS 2 Jazzy Jalisco** robotics wo
 
 ## ⚡ Key Highlights
 
+- **Precompiled Binary Cache (`ros.cachix.org`):** Preconfigured in `flake.nix` so packages download prebuilt binaries in seconds without local CPU compilation.
 - **Zero Host Contamination:** Fully isolated development environment; no `sudo apt install` or global pollution.
 - **Zero Dependency Hell:** All packages, compilers (GCC/CMake), Python dependencies, and ROS 2 middleware are pinned deterministically via `flake.lock`.
 - **Instant Activation:** Powered by `direnv` + `nix-direnv` for 0ms environment loading upon entering the directory.
@@ -41,7 +43,7 @@ ros2_ws/
 
 ### 1. Clone the Workspace
 ```bash
-git clone git@github.com:MANNUS1/ros2_ws.git
+git clone git@github.com:MizardB/ros2_ws.git
 cd ros2_ws
 ```
 
