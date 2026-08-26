@@ -1,0 +1,19 @@
+# Colcon build output
+build/
+install/
+log/
+
+# Direnv & Nix
+.direnv/
+result
+result-*
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
